@@ -5,7 +5,6 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import Cart from '../components/Cart';
 
-
 import {
   REMOVE_FROM_CART,
   UPDATE_CART_QUANTITY,
@@ -19,7 +18,7 @@ import spinner from '../assets/spinner.gif';
 function Detail() {
   const state = useSelector(state => state);
   const dispatch = useDispatch();
-  
+
   const { id } = useParams();
 
   const [currentProduct, setCurrentProduct] = useState({});
